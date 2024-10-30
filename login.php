@@ -30,17 +30,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h1 style="text-align: center;">Bienvenido</h1>
 
-    <form style="width: 300px; margin: auto;" method="post" action="login.php">
-        <br>
-        <br>
-        <input class="form-control" type="text" name="usuario" placeholder="usuario" aria-label="default input example" required>
-        <input class="form-control" type="text" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
-        <br>
-        <div style="text-align: center;">
-            <button type="submit" class="btn btn-success">Iniciar</button>
-        </div>
-    </form>
-
+    <div>
+        <form style="width: 300px; margin: auto;" method="post" action="login.php">
+            <br>
+            <br>
+            <label for="InputUsuario" class="form-label">Ingresar usuario</label>
+            <input class="form-control" type="text" id="InputUsuario" name="usuario" placeholder="usuario" aria-label="default input example" required>
+            <br>
+            <label for="InputContrasena" class="form-label">Ingresar contraseña</label>
+            <input class="form-control" type="text" id="InputContrasena" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
+            <br>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-success">Iniciar</button>
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>
