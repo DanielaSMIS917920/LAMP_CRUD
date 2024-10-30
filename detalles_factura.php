@@ -47,8 +47,8 @@ $detalles = $conn->query("SELECT * FROM detalles_factura");
         <input type="number" step="0.01" name="precio" placeholder="Precio" required>
         <button type="submit" name="add_detalle_factura">Agregar detalles a la factura</button>
     </form>
-    <table>
-        <tr><th>ID</th><th>Factura ID</th><th>Producto ID</th><th>Cantidad</th><th>Precio</th></tr>
+    <table class="table">>
+        <tr><th scope="col">ID</th><th scope="col">Factura ID</th><th scope="col">Producto ID</th><th scope="col">Cantidad</th><th scope="col">Precio</th></tr>
         <?php while ($row = $detalles->fetch_assoc()): ?>
         <tr>
             <td><?= $row['id'] ?></td>

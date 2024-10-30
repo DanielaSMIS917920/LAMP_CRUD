@@ -40,8 +40,8 @@ $inventario = $conn->query("SELECT * FROM inventario");
         <button type="submit" name="add_inventario">Agregar al Inventario</button>
     </form>
  <!-- Se muestran los datos ingresados en una tabla -->
-    <table>
-        <tr><th>ID</th><th>Producto ID</th><th>Cantidad</th><th>Fecha</th></tr>
+    <table class="table">>
+        <tr><th scope="col">ID</th><th scope="col">Producto ID</th><th scope="col">Cantidad</th><th scope="col">Fecha</th></tr>
         <?php while ($row = $inventario->fetch_assoc()): ?>
         <tr>
             <td><?= $row['id'] ?></td>

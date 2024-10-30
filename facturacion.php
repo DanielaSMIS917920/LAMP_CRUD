@@ -32,8 +32,8 @@ $facturas = $conn->query("SELECT * FROM facturacion");
         <button type="submit" name="add_factura">Agregar a Factura</button>
     </form>
  <!-- Se muestran los datos ingresados en una tabla -->
-    <table>
-        <tr><th>ID</th><th>Fecha de compra</th><th>Total</th></tr>
+    <table class="table">>
+        <tr><th scope="col">ID</th><th scope="col">Fecha de compra</th><th scope="col">Total</th></tr>
         <?php while ($row = $facturas->fetch_assoc()): ?>
         <tr>
             <td><?= $row['id'] ?></td>

@@ -35,8 +35,8 @@ $productos = $conn->query("SELECT * FROM productos");
         <button type="submit" name="add_producto">Agregar Producto</button>
     </form>
  <!-- Se muestran los datos ingresados en una tabla -->   
-    <table>
-        <tr><th>ID</th><th>Nombre</th><th>Categoria</th><th>Proveedor</th></tr>
+    <table class="table">>
+        <tr><th scope="col">ID</th><th scope="col">Nombre</th><th scope="col">Categoria</th><th scope="col">Proveedor</th></tr>
         <?php while ($row = $productos->fetch_assoc()): ?>
         <tr>
             <td><?= $row['id'] ?></td>

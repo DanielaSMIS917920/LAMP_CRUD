@@ -32,7 +32,7 @@ include 'db.php';
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="admin.php">Inicio</a>
                 <a class="nav-link" href="productos.php">Control de Productos</a>
-                <a class="nav-link" href="inventatio.php">Inventario</a>
+                <a class="nav-link" href="inventario.php">Inventario</a>
                 <a class="nav-link" href="facturacion.php">Facturacion</a>
                 <a class="nav-link" href="detalles_factura.php">Detalles de factura</a>
                 <a class="nav-link" href="logout.php">Cerrar</a>
