@@ -1,5 +1,5 @@
 # Inventariado Despensa Feliz
-Simulación de inventario y factura para la empresa Despensa Feliz
+Contexto
 
 Para su correcta ejecución es necesario seguir los siguientes pasos:
 
