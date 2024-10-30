@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input class="form-control" type="text" id="InputUsuario" name="usuario" placeholder="usuario" aria-label="default input example" required>
             <br>
             <label for="InputContrasena" class="form-label">Ingresar contraseña</label>
-            <input class="form-control" type="text" id="InputContrasena" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
+            <input class="form-control" type="password" id="InputContrasena" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
             <br>
             <div style="text-align: center;">
                 <button type="submit" class="btn btn-success">Iniciar</button>
