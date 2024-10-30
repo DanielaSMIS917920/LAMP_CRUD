@@ -6,10 +6,11 @@ include 'db.php';
 // Se agregan y procesan los campos respectivos pedidos en el formulario de Productos
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_producto'])) {
     $nombre_producto = $_POST['nombre_producto'];
-    $categoria = $_POST['categoria']
+    $categoria = $_POST['categoria']; // Falta el punto y coma aquí
     $proveedor = $_POST['proveedor'];
-    $conn->query("INSERT INTO productos (nombre_producto, categoria, proveedor) VALUES ('$nombre_producto',' $categoria','$proveedor')");
+    $conn->query("INSERT INTO productos (nombre_producto, categoria, proveedor) VALUES ('$nombre_producto', '$categoria', '$proveedor')");
 }
+
 
 //Pide visualizar los datos enviados 
 $productos = $conn->query("SELECT * FROM productos");
