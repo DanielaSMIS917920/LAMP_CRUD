@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //Se realiza una autenticación de administrador, en este caso se asignan ya las credenciales para el administrador
     if ($username == 'admin' && $password == 'dfeliz1234') {
         $_SESSION['admin'] = true;
-        header("Location: productos.php");
+        header("Location: admin.php");
         exit();
     } else {
         echo "Usuario invalido";
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Inicio de Sesión</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Bienvenido</h1>
+    <h1 style="text-align: center;">Bienvenido a la Despensa Feliz</h1>
 
     <div>
         <form style="width: 300px; margin: auto;" method="post" action="login.php">
