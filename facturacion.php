@@ -24,7 +24,7 @@ $facturas = $conn->query("SELECT * FROM facturacion");
 </head>
 <body>
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
-    <h2>Facturación</h2>
+    <h2 style="text-align: center;">Facturación</h2>
 <!-- Formulario para los campos de Facturación -->
     <form method="post">
         <input type="date" name="fecha" required>

@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_producto'])) {
     $nombre_producto = $_POST['nombre_producto'];
     $categoria = $_POST['categoria']
     $proveedor = $_POST['proveedor'];
-    $conn->query("INSERT INTO productos (nombre_producto, categoria, proveedor) VALUES ('$nombre_producto',' $categoria', '$proveedor')");
+    $conn->query("INSERT INTO productos (nombre_producto, categoria, proveedor) VALUES ('$nombre_producto',' $categoria','$proveedor')");
 }
 
 //Pide visualizar los datos enviados 
@@ -25,7 +25,7 @@ $productos = $conn->query("SELECT * FROM productos");
 </head>
 <body>
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
-    <h2>Control de Productos</h2>
+    <h2 style="text-align: center;">Control de Productos</h2>
 <!-- Formulario para los campos de Productos -->
     <form method="post">
         <input type="text" name="nombre_producto" placeholder="Nombre del Producto" required>
