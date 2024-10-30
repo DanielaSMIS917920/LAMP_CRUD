@@ -36,7 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input class="form-control" type="text" name="usuario" placeholder="usuario" aria-label="default input example" required>
         <input class="form-control" type="text" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
         <br>
-        <button type="submit" class="btn btn-success">Iniciar</button>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">Iniciar</button>
+        </div>
     </form>
 
     
