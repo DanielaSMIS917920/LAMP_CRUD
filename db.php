@@ -5,7 +5,7 @@ $password = "despensa1234"; // contraseña del usuario para ingresar a la base d
 $dbname = "despensa_feliz_db"; // nombre que se le asigna a la base de datos de la empresa Despensa Feliz
 
 // Se realiza la conexión de los parametros anteriores con la base de datos en MySQL
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password);
 
 // Se comprueba que la conexión es correcta o si no, avisa del error
 if ($conn->connect_error) {
