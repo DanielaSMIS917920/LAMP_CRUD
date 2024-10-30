@@ -22,30 +22,21 @@ include 'db.php';
 </head>
 <body>
 <!--Estructura del navar para facilitar la navegación entre las tablas y paginas -->
-    <nav class="navbar bg-primary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand">Despensa Feliz</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="admin.php">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                     <a class="nav-link" href="productos.php">Control de Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inventario.php">Inventario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="facturacion.php">Factura</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="detalles_factura.php">Dettales de Facturas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Cerrar sesión</a>
-                    </li>
-                </ul>
+            <a class="navbar-brand" href="admin.php">Despensa Feliz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="admin.php">Inicio</a>
+                <a class="nav-link" href="productos.php">Control de Productos</a>
+                <a class="nav-link" href="inventatio.php">Inventario</a>
+                <a class="nav-link" href="facturacion.php">Facturacion</a>
+                <a class="nav-link" href="detalles_factura.php">Detalles de factura</a>
+                <a class="nav-link" href="logout.php">Cerrar</a>
+            </div>
             </div>
         </div>
     </nav>
