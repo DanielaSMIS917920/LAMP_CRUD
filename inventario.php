@@ -28,7 +28,7 @@ $inventario = $conn->query("SELECT * FROM inventario");
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
     <h2 style="text-align: center;">Inventariado</h2>
 <!-- Formulario para los campos de Inventario -->
-    <form method="post">
+    <form style="width: 300px; margin: auto;" method="post">
 <!-- Se pide escoger uno de los productos ingresados en el Control de Producto-->
         <select name="producto_id" required>
             <?php while ($row = $productos->fetch_assoc()): ?>

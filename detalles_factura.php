@@ -31,7 +31,7 @@ $detalles = $conn->query("SELECT * FROM detalles_factura");
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
     <h2 style="text-align: center;">Detalles de Facturación</h2>
 <!-- Formulario para los campos de Detalles de Facturación -->
-    <form method="post">
+    <form style="width: 300px; margin: auto;" method="post">
 <!-- Se pide escoger uno de los productos e ID de la factura ingresados en las tablas respectivas de estos campos-->
         <select name="factura_id" required>
             <?php while ($row = $facturas->fetch_assoc()): ?>

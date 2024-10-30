@@ -26,7 +26,7 @@ $facturas = $conn->query("SELECT * FROM facturacion");
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
     <h2 style="text-align: center;">Facturación</h2>
 <!-- Formulario para los campos de Facturación -->
-    <form method="post">
+    <form style="width: 300px; margin: auto;" method="post">
         <input type="date" name="fecha" required>
         <input type="number" step="0.01" name="total" placeholder="Total del producto" required>
         <button type="submit" name="add_factura">Agregar a Factura</button>

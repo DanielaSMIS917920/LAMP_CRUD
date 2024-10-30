@@ -28,7 +28,7 @@ $productos = $conn->query("SELECT * FROM productos");
     <?php include 'admin.php'; ?> <!-- Incluye el Nav de admin.php -->
     <h2 style="text-align: center;">Control de Productos</h2>
 <!-- Formulario para los campos de Productos -->
-    <form method="post">
+    <form style="width: 300px; margin: auto;" method="post">
         <input type="text" name="nombre_producto" placeholder="Nombre del Producto" required>
         <input type="text" name="categoria" placeholder="Categoria del producto" required>
         <input type="text" name="proveedor" placeholder="Proveedor" required>

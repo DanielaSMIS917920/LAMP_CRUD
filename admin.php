@@ -28,22 +28,22 @@ include 'db.php';
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="admin.php">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="admin.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="productos.php">Control de Productos</a>
+                     <a class="nav-link" href="productos.php">Control de Productos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="inventario.php">Inventario</a>
+                        <a class="nav-link" href="inventario.php">Inventario</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="facturacion.php">Factura</a>
+                        <a class="nav-link" href="facturacion.php">Factura</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="detalles_factura.php">Dettales de Facturas</a>
+                        <a class="nav-link" href="detalles_factura.php">Dettales de Facturas</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Cerrar sesión</a>
+                        <a class="nav-link" href="logout.php">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
