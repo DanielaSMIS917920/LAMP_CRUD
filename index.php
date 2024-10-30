@@ -9,12 +9,9 @@
 <body>
     <h1>Bienvenid@ a la Despensa Feliz</h1>
     <br>
-    <div>
-        <img src="./images/Administracion.jpg" class="img-fluid" alt="...">
-    </div>
     <br>
-    <div class="d-grid gap-2">
-        <button href="login.php" class="btn btn-primary" type="button">Iniciar sesión como administrador</button>
-    </div>
+    <form action="login.php" method="get">
+        <button type="submit" class="btn btn-success">Iniciar sesion como administrador</button>
+    </form>
 </body>
 </html>
