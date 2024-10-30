@@ -31,9 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h1 style="text-align: center;">Bienvenido</h1>
 
     <form style="width: 300px; margin: auto;" method="post" action="login.php">
-        <input type="text" name="usuario" placeholder="usuario" required>
-        <input type="text" name="contrasena" placeholder="contraseña" required>
-        <button type="submit">Iniciar</button>
+        <br>
+        <br>
+        <input class="form-control" type="text" name="usuario" placeholder="usuario" aria-label="default input example" required>
+        <input class="form-control" type="text" name="contrasena" placeholder="contraseña" aria-label="default input example" required>
+        <br>
+        <button type="submit" class="btn btn-success">Iniciar</button>
     </form>
 
     
